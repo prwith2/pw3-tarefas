@@ -14,6 +14,6 @@ private apiUrl= 'http://localhost:8080';
 private http=inject(HttpClient);
 
 autenticar(username: string, password:string):Observable<LoginResponse> {
-returnthis.http.post<LoginResponse>(`${this.apiUrl}/login`, { username,
+return this.http.post<LoginResponse>(`${this.apiUrl}/login`, { username,
 password});
  }
